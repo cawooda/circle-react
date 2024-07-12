@@ -2,7 +2,7 @@
   "name": "circle-independent",
   "version": "1.0.0",
   "description": "",
-  "main": "server/src/index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "cd server  && npm start",
     "develop": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
