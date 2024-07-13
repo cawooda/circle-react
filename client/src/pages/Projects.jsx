@@ -1,4 +1,5 @@
 import Project from "../components/Project";
+import AddProject from "../components/AddProject";
 
 const projects = [
   {
@@ -23,6 +24,7 @@ export default function Projects() {
       <h1>Projects</h1>
 
       <Project projects={projects} />
+      <AddProject />
     </div>
   );
 }
