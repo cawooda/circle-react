@@ -9,7 +9,7 @@ const projects = [
     description:
       "Dog Tech is a blog about tech. We dont know how dogs feature just yet, but we will let our users decide how dogs inspire great tech with their simple, loyal and friendly manner",
     imageName: "dog.jpg",
-    link: "http://people.circlesupports.com",
+    link: "https://dog-tech.onrender.com",
   },
   {
     id: 2,
