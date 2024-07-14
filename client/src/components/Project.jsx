@@ -2,6 +2,17 @@ import { Container, Card, CardGroup, Col, Row, Button } from "react-bootstrap";
 
 import dayjs from "dayjs";
 
+const styles = {
+  customRounded: {
+    borderRadius: "50%",
+    borderColor: "black",
+    borderWidth: "2px",
+    width: "200px",
+    height: "200px",
+    objectFit: "cover",
+  },
+};
+
 function Project({ projects }) {
   return (
     <>
@@ -9,7 +20,11 @@ function Project({ projects }) {
         <CardGroup>
           {projects.map((project) => (
             <Card className="row gx-5" key="{project.id}">
-              <Card.Img src={project.imageUrl}></Card.Img>
+              <Card.Img
+                src={`/projects/${project.name}/${project.imageName}`}
+                className="rounded-circle object-fit-cover"
+                //style={styles.customRounded}
+              ></Card.Img>
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
 
