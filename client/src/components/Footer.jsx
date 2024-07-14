@@ -21,6 +21,7 @@ function Footer({ contact, disclaimer, credits }) {
           <h5>Address</h5>
           <p>{contact.address}</p>
           <h5>Phone:</h5>
+          <p>{contact.phone}</p>
         </Row>
       </Container>
     </>

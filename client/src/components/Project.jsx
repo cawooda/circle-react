@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 function Project({ projects }) {
   return (
     <>
-      <Container>
+      <Container className="p-3">
         <CardGroup>
           {projects.map((project) => (
             <Card className="row gx-5" key="{project.id}">
@@ -16,11 +16,13 @@ function Project({ projects }) {
                 <Card.Text>{project.description}</Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Col>
-                  <Row>
-                    <Button href="{project.link}" class="btn btn-info">
-                      {project.title}
-                    </Button>
+                <Col className="p-3">
+                  <Row className="p-1">
+                    <a href={project.link}>
+                      <Button variant="outline-info" size="lg">
+                        {project.title}
+                      </Button>
+                    </a>
                   </Row>
                 </Col>
               </Card.Footer>

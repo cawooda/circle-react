@@ -3,8 +3,8 @@ import logo from "../assets/images/circle-logo.png";
 const style = {
   container: {
     height: "5vh",
-    paddingTop: "2%",
-    paddingBottom: "7%",
+    paddingTop: "1rem",
+    paddingBottom: "5rem",
   },
   logo: {
     width: "50px",

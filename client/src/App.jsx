@@ -28,7 +28,7 @@ function App() {
         <Header fluid />
       </Container>
       <main>
-        <Container>
+        <Container className="py-5">
           <Outlet />
         </Container>
         <Container>
