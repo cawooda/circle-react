@@ -20,11 +20,13 @@ function Projects({ projects }) {
         <CardGroup>
           {projects.map((project) => (
             <Card className="row gx-5" key="{project.id}">
-              <Card.Img
-                src={`/projects/${project.name}/${project.imageName}`}
-                className="rounded-circle p-4 object-fit-cover"
-                //style={styles.customRounded}
-              ></Card.Img>
+              <a href={project.link}>
+                <Card.Img
+                  src={`/projects/${project.name}/${project.imageName}`}
+                  className="rounded-circle p-4 object-fit-cover"
+                  //style={styles.customRounded}
+                ></Card.Img>
+              </a>
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
 
