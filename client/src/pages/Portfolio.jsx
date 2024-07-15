@@ -1,7 +1,16 @@
-import Project from "../components/Project";
+import Projects from "../components/Projects";
 import AddProject from "../components/AddProject";
 
 const projects = [
+  {
+    id: 4,
+    title: "Pop Chat",
+    name: "pop-chat",
+    description:
+      "Pop chat is a social networking platform that doesen't sell your data. Post, chat, comment and connect, with Pop Chat.",
+    imageName: "popchat.png",
+    link: "https://dog-tech.onrender.comhttps://github.com/cawooda/triumvirate",
+  },
   {
     id: 3,
     title: "Dog Tech",
@@ -31,12 +40,11 @@ const projects = [
   },
 ];
 
-export default function Projects() {
+export default function Portfolio() {
   return (
     <div id="error-page">
       <h1>Projects</h1>
-
-      <Project projects={projects} />
+      <Projects projects={projects} />
       <AddProject />
     </div>
   );

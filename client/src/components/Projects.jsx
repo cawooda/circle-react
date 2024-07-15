@@ -13,7 +13,7 @@ const styles = {
   },
 };
 
-function Project({ projects }) {
+function Projects({ projects }) {
   return (
     <>
       <Container className="p-3">
@@ -22,7 +22,7 @@ function Project({ projects }) {
             <Card className="row gx-5" key="{project.id}">
               <Card.Img
                 src={`/projects/${project.name}/${project.imageName}`}
-                className="rounded-circle object-fit-cover"
+                className="rounded-circle p-4 object-fit-cover"
                 //style={styles.customRounded}
               ></Card.Img>
               <Card.Body>
@@ -49,4 +49,4 @@ function Project({ projects }) {
   );
 }
 
-export default Project;
+export default Projects;
